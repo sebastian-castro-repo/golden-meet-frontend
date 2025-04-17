@@ -1,0 +1,1 @@
+export const ERROR_INCORRECT_USER_OR_PASSWORD = "Usuario o contraseña incorrecto"

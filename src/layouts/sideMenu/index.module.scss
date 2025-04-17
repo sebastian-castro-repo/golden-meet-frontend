@@ -1,0 +1,25 @@
+@use "@styles/global_variables" as *;
+@use "@styles/screen_sizes" as screenSizes;
+
+.container{
+  position: fixed;
+  left: 0;
+  //width: $side-bar-width;
+  height: 100%;
+  padding: 24px 0 16px 16px;
+  z-index: 199;
+  background: var(--color-background-pinfo);
+}
+
+.version{
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-30%);
+  font-size: $font-size-xxs;
+  line-height: $line-height-xs;
+  font-weight: lighter;
+  color: var(--color-font-very-soft);
+}
+@media screen and (max-width: screenSizes.$notebook_max){
+}

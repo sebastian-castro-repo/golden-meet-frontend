@@ -1,0 +1,78 @@
+@use "@styles/global_variables" as *;
+@use "@styles/screen_sizes" as screenSizes;
+
+.container {
+  //position: relative;
+  //background: white;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+
+  .infoIcon{
+    font-size: 120px;
+    color: var(--color_border_input);
+    margin-bottom: 24px;
+  }
+
+  p{
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    font-weight: 600;
+    color: var(--color-font-primary);
+    margin: 0;
+  }
+
+  span{
+    font-size: $font-size-sm;
+    line-height: $font-size-lg;
+    color: var(--color-font-very-soft);
+    margin-top: 8px;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+
+.smallContainer {
+  //position: relative;
+  //background: white;
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+
+  .infoIcon{
+    font-size: 60px;
+    color: var(--color_border_input);
+    margin-bottom: 4px;
+  }
+
+  p{
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    font-weight: 600;
+    color: var(--color-font-primary);
+    margin: 0;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  span{
+    font-size: $font-size-xxs;
+    line-height: $font-size-xxs;
+    color: var(--color-font-very-soft);
+    margin-top: 8px;
+    max-width: 150px;
+    text-align: center;
+  }
+}

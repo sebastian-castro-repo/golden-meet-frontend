@@ -1,0 +1,96 @@
+@use "@styles/global_variables" as *;
+@use "@styles/screen_sizes" as screenSizes;
+
+.container{
+  position: fixed;
+  top: 12px;
+  right: 24px;
+  z-index: 997;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.card{
+  margin-top: 12px;
+  width: 420px;
+  min-height: 80px;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: start;
+
+  .icon{
+    width: 19px;
+    margin-top: 2px;
+    margin-right: 16px;
+  }
+
+  h5{
+    margin: 0 0 4px 0;
+    font-weight: 600;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+
+  p{
+    margin: 0;
+    font-weight: 400;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+  }
+}
+
+
+.default{
+  background: var(--color-hover-item);
+
+  p,h5,h4,h3,h2,h1,span,label,b,a{
+    color: var(--color-font-primary);
+  }
+
+  .icon{
+    color: var(--color-font-primary);
+  }
+}
+
+.info{
+  background: var(--color-alert-info-back);
+
+  p,h5,h4,h3,h2,h1,span,label,b,a{
+    color: white;
+  }
+
+  .icon{
+    color: white;
+  }
+}
+
+
+.error{
+  background: var(--color-alert-error-back);
+
+  p,h5,h4,h3,h2,h1,span,label,b,a{
+    color: var(--color-alert-error-font);
+  }
+
+  .icon{
+    color: var(--color-alert-error-font);
+  }
+}
+
+
+.success{
+  background: var(--color-success-back);
+
+  p,h5,h4,h3,h2,h1,span,label,b,a{
+    color: var(--color-success-font);
+  }
+
+  .icon{
+    color: var(--color-success-font);
+  }
+}
+
+@media screen and (max-width: screenSizes.$notebook_max){
+}

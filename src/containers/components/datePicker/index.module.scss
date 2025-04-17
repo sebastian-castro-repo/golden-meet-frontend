@@ -1,0 +1,86 @@
+
+
+.ddlBtnAdornment{
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  color: #999999;
+  display: none;
+}
+
+.ddlTitle{
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  background: white;
+  padding: 0 8px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+}
+
+.ddlTitleSmall{
+  position: absolute;
+  top: -2px;
+  left: 14px;
+  background: white;
+  padding: 0 8px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.ddlBtn{
+  display: flex;
+  align-items: center;
+  min-width: 250px;
+  width: 100%;
+  height: 48px !important;
+  padding: 10px 15px;
+  background: #FFFFFF;
+  border: 1pt solid rgba(196, 196, 196, 0.77);
+  border-radius: 4px;
+  text-align: left;
+  outline: none !important;
+  cursor: pointer;
+
+  font-feature-settings: 'ss03' on, 'ss02' on;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+
+  margin: 20px auto;
+
+  .ddlIcon{
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .ddlTitle{
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    background: white;
+    padding: 0 8px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #666666;
+  }
+
+  &:focus{
+    .ddlIcon{
+      transform: rotate(180deg);
+    }
+  }
+}

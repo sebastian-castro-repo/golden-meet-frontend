@@ -1,0 +1,70 @@
+@use "@styles/global_variables" as *;
+
+.content{
+  display: inline-flex;
+  position: relative;
+  margin: auto;
+
+  .point{
+    width: 24px;
+    height: 24px;
+    background: var(--color-font-pinfo);
+    opacity: 0.4;
+    border-radius: 100%;
+    margin-right: 16px;
+  }
+
+  .small{
+    width: 16px;
+    height: 16px;
+    background: var(--color-font-pinfo);
+    opacity: 0.4;
+    border-radius: 100%;
+    margin-right: 12px;
+  }
+
+  .tiny{
+    width: 6px;
+    height: 6px;
+    background: var(--color-font-pinfo);
+    opacity: 0.4;
+    border-radius: 100%;
+    margin-right: 4px;
+  }
+
+  .p1{
+    //animation-delay: 1s;
+    animation: goUp .8s ease infinite;
+  }
+  .p2{
+    animation: goUp .8s ease .3s forwards infinite;
+  }
+  .p3{
+    animation: goUp .8s ease .6s forwards infinite;
+  }
+}
+
+@keyframes goUp {
+    0% {
+      -ms-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+    35% {
+      -ms-transform: translateY(-300%);
+      -moz-transform: translateY(-300%);
+      -webkit-transform: translateY(-300%);
+      -o-transform: translateY(-300%);
+      transform: translateY(-300%);
+      opacity: 1;
+    }
+    80% {
+      -ms-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -webkit-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+}

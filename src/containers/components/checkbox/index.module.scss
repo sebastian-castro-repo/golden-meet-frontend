@@ -1,0 +1,65 @@
+@use "@styles/global_variables" as *;
+
+.container{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkLabel{
+  font-size: $font-size-xs;
+  line-height: $line-height-xs;
+  font-weight: 400;
+  color: var(--color-font-primary);
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.checkBtnDefault{
+  display: none;
+}
+
+.checkBtn,
+.checkBtnChecked
+{
+  display: inline-block;
+  position: relative;
+  border: 1.5pt solid var(--color-font-primary);
+  border-radius: 2px;
+  background: none;
+  width: 18px;
+  height: 18px;
+  background: white;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.checkBtn{
+  //background: #f3dada;
+}
+.checkBtnChecked{
+  background: var(--color-font-pinfo);
+}
+
+.check,
+.notCheck{
+  font-size: $font-size-sm !important;
+  color: white !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: none;
+}
+
+.checked{
+  display: flex;
+}
+
+.check {
+  color: #538353;
+}
+
+.notCheck {
+  color: #f3b8b8;
+}

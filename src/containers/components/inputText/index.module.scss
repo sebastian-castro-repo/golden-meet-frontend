@@ -1,0 +1,76 @@
+@use "@styles/global_variables" as *;
+
+.container{
+  //display: inline-flex;
+  //flex-direction: column;
+  //position: relative;
+  //margin-bottom: 10px;
+  width: 100%;
+
+}
+
+.inputError{
+  border: 1pt solid red !important;
+}
+
+.inputLabel{
+  font-size: $font-size-xs;
+  font-weight: 400;
+  line-height: $line-height-xs;
+  color: var(--color-font-very-soft);
+  margin-bottom: 8px;
+}
+
+.inputPadding{
+  padding-left: 44px !important;
+}
+
+.icon{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-48%);
+  left: 12px;
+  width: 20px;
+  color: var(--color-font-very-soft);
+}
+
+.input{
+  width: 100%;
+  border-radius: 8px;
+  border: 1pt solid var(--color_border_input);
+  outline: none;
+  padding: 12px 16px;
+  height: 48px;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  font-weight: 400;
+  color: var(--color-font-primary);
+
+  &:focus{
+    outline: 1pt solid var(--color_border_input);
+  }
+}
+
+.cleanCross{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  font-size: $font-size-md;
+  color: var(--color-font-primary);
+  cursor: pointer;
+
+  &:hover{
+    color: red;
+  }
+}
+
+.errorLabel{
+  position: absolute;
+  color: red;
+  bottom: -25px;
+  left: 4px;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  font-weight: 400;
+}

@@ -1,0 +1,116 @@
+@use "@styles/global_variables" as *;
+@use "@styles/screen_sizes" as screenSizes;
+
+.container {
+  width: 100%;
+  height: 100%;
+  //padding: 48px 36px;
+}
+.topContainer{
+  //display: inline-flex;
+  align-items: start;
+  width: 100%;
+
+  h1{
+    font-size: $font-size-xxl;
+    font-weight: 600;
+    line-height: $line-height-xl;
+  }
+
+  p{
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    font-weight: 400;
+    color: var(--color-font-very-soft);
+    margin: 0;
+  }
+
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 272px;
+    height: 48px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--color-font-primary-rgb-soft);
+    background: none;
+    transition: all .3s;
+    text-decoration: none;
+    color: var(--color-font-primary);
+    cursor: pointer;
+    white-space: nowrap;
+
+    font-weight: 600;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+
+    img{
+      width: 28px;
+    }
+
+    &:hover{
+      border-color: var(--color-font-primary);
+    }
+  }
+
+  .marginAutoLeft{
+    margin-left: auto;
+    margin-right: 8px;
+  }
+
+  .searchBarContainer{
+    position: relative;
+    max-width: 100%;
+    margin-top: 48px;
+
+    .searchIcon{
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--color-font-very-soft);
+      width: 24px;
+    }
+
+    input{
+      font-size: $font-size-sm;
+      line-height: $line-height-sm;
+      font-weight: 400;
+      color: var(--color-font-primary);
+
+      &::placeholder{
+        color: var(--color-font-very-soft);
+      }
+    }
+  }
+}
+
+.newArrivesContainer{
+  width: 100%;
+  height: max-content;
+  margin-top: 48px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: screenSizes.$notebook_max) {
+  .container{
+    padding: 16px 4px calc($bottom-bar-height + 16px) 4px;
+  }
+  .topContainer{
+    flex-direction: column;
+
+    a{
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  .marginAutoLeft{
+    margin: 32px auto 8px auto !important;
+  }
+
+  .searchBarContainer{
+    max-width: 100% !important;
+  }
+}

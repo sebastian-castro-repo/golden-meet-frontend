@@ -1,0 +1,22 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@styles/*": ["src/styles/*"],
+      "@global/*": ["src/global/*"],
+    },
+    "types": ["node"],
+    "jsx": "react",
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
+  "noImplicitAny": false,
+  "strictNullChecks": false
+  }
+}

@@ -1,0 +1,93 @@
+@use "@styles/global_variables" as *;
+@use "./global_colors.scss";
+@use "screen_sizes" as screenSizes;
+// Global Styles
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('@assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  //font-weight: normal;
+  //font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamMedium';
+  src: url('@assets/fonts/Gotham/GothamMedium.ttf') format('truetype');
+  //font-weight: normal;
+  //font-style: normal;
+}
+
+*{
+  font-family: 'OpenSans';
+  font-feature-settings: 'ss02' on;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--color-font-pinfo);
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: var(--color-font-soft);
+  }
+  box-sizing: border-box;
+}
+
+button{
+  cursor: pointer;
+}
+
+:root{
+  margin: 0;
+}
+
+body{
+  background: var(--color-background-pinfo);
+  margin: 0;
+}
+
+body.modal-open {
+  overflow: hidden !important;
+}
+
+.principalContainer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.principalContent{
+  position: absolute;
+  margin: 8px;
+  //margin: 8px 8px 8px calc($side-bar-width + 24px);
+  width: calc(100% - 32px);
+  //width: calc(100% - ($side-bar-width + 32px));
+  min-height: calc(100% - 16px);
+  height: max-content;
+  padding: 48px 36px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 0px 1px 0px #9999991A,0px 2px 2px 0px #99999917,0px 4px 2px 0px #9999990D,0px 6px 3px 0px #99999903, 0px 10px 3px 0px #99999900;
+}
+
+.modalRoot{
+  z-index: 200;
+}
+
+@media screen and (max-width: screenSizes.$notebook_max){
+}
+
+@media screen and (max-width: screenSizes.$fold_max){
+  .principalContent{
+    //padding: 16px 2px calc($bottom-bar-height + 16px) 2px;
+  }
+}
