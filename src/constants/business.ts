@@ -1,5 +1,4 @@
-export const PROJECT_NAME= "PRINTADO"
-export const PROJECT_DESCRIPTION= "Printado es una plataforma web pensada para conectar a personas que necesitan impresiones 3D con creadores que ofrecen sus servicios. El sistema permite publicar trabajos, recibir ofertas, calificar creadores y gestionar toda la experiencia de impresión 3D de forma centralizada."
+export const PROJECT_NAME= "GOLDEN-MEET-FRONTEND"
 
 export const MONTEVIDEO_CENTER_COORDS = {lat: -34.885148957425805, lng: -56.169835688190844};
 
